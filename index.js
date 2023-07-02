@@ -14,7 +14,7 @@ dotenv.config();
 
 conectardb();
 
-const dominiospermitidos = ['http://localhost:5173']
+const dominiospermitidos = [process.env.FRONTEND_URL]
 
 const coroptions = {
     origin: function(origin, callback) {
